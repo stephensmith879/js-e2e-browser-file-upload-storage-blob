@@ -65,3 +65,6 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
+      env: # Add environment variables here
+            REACT_APP_STORAGESASTOKEN: ${{secrets.REACT_APP_STORAGESASTOKEN}}
+            REACT_APP_STORAGERESOURCENAME: ${{secrets.REACT_APP_STORAGERESOURCENAME}}
